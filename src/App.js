@@ -1,6 +1,6 @@
 function App() {
   return (
-<>OI</>
+    <>Hocus Focus</>
   );
 }
 
