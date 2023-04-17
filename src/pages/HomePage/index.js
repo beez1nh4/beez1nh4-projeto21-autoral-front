@@ -34,8 +34,6 @@ export default function HomePage() {
             <Button onClick ={()=> navigate("/subject")} color="primary" >Subjects</Button>
             <Button onClick ={()=> navigate("/hobby")} color="primary" >Hobbies</Button>
             <Button onClick ={()=> navigate("/progress")} color="primary" >Progress</Button>
-            <Button onClick ={()=> navigate("/reward")} color="primary" >Rewards</Button>
-            <Button onClick ={()=> navigate("/studysession")} color="primary" >Study Sessions</Button>
         </MiniContainer>
     </Container>
     </Page>
