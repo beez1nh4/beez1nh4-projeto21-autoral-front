@@ -3,6 +3,7 @@ import { ToastContainer } from 'react-toastify';
 
 import Enroll from './pages/Enroll';
 import SignIn from './pages/SignIn';
+import HomePage from './pages/HomePage';
 
 import { UserProvider } from './contexts/UserContext';
 
@@ -22,7 +23,7 @@ function App() {
                 path="/home"
                 element={
                   <ProtectedRouteGuard>
-                    
+                    <HomePage/>
                   </ProtectedRouteGuard>
                 }
               >

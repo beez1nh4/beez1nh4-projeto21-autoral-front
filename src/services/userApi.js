@@ -6,4 +6,12 @@ export async function signUp(email, password, username, birthday, photoUrl) {
   
   return response.data;
 }
-//
+
+export async function getPersonalInformations(token) {
+  const response = await api.get('/users', {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  return response.data;
+}

@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export default styled.div`
   height: 100vh;
-  max-height: ${props => props.height || '600px'};
+  max-height: ${props => props.height || '570px'};
 
   width: 100%;
-  max-width: ${props => props.width || '1200px'};
+  max-width: ${props => props.width || '350px'};
 
   border-radius: 20px;
   background-color: #fff;
@@ -14,7 +14,7 @@ export default styled.div`
   display: flex;
   overflow: hidden;
   padding: 10px;
-  justify-content: space-around;
+  flex-direction: column;
 
   @media (max-width: 600px) {
     border-radius: 0;
@@ -23,6 +23,5 @@ export default styled.div`
     max-height: initial;
     min-width: 100%;
     max-width: initial;
-    flex-direction: column;
   }
 `;
