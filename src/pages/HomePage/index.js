@@ -7,6 +7,7 @@ import Container from '../../components/Container';
 import MiniContainer from '../../components/MiniContainer';
 import Button from '../../components/Form/Button';
 import LittleTitle from '../../components/LittleTitle';
+import Tasks from '../../components/Home/Tasks';
 
 export default function HomePage() {
 
@@ -22,6 +23,7 @@ export default function HomePage() {
     <Container>
         <MiniContainer>
             <LittleTitle>To-Do List</LittleTitle>
+            <Tasks/>
         </MiniContainer>
         <MiniContainer>
             <LittleTitle>Activities</LittleTitle>
@@ -29,9 +31,11 @@ export default function HomePage() {
         <MiniContainer>
             <LittleTitle>Links</LittleTitle>
             <LittleTitle>More Content</LittleTitle>
+            <Button onClick ={()=> navigate("/subject")} color="primary" >Subjects</Button>
             <Button onClick ={()=> navigate("/hobby")} color="primary" >Hobbies</Button>
             <Button onClick ={()=> navigate("/progress")} color="primary" >Progress</Button>
             <Button onClick ={()=> navigate("/reward")} color="primary" >Rewards</Button>
+            <Button onClick ={()=> navigate("/studysession")} color="primary" >Study Sessions</Button>
         </MiniContainer>
     </Container>
     </Page>

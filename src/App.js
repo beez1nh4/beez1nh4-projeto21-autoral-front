@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage';
 import { UserProvider } from './contexts/UserContext';
 
 import useToken from './hooks/useToken';
+import TaskCreation from './pages/HomePage/Task';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               >
                 <Route index path="*" element={<Navigate to="/home" />} />
               </Route>
+              <Route path="/task" element={<TaskCreation />} />
             </Routes>
           </Router>
         </UserProvider>
