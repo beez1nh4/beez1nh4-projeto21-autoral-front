@@ -1,10 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import App from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import 'react-toastify/dist/ReactToastify.css';
+
+import './assets/styles/reset.css';
+import './assets/styles/style.css';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
 );

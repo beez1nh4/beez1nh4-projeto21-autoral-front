@@ -3,9 +3,7 @@ import { ToastContainer } from 'react-toastify';
 
 import Enroll from './pages/Enroll';
 import SignIn from './pages/SignIn';
-import Dashboard from './pages/Dashboard';
 
-import { EventInfoProvider } from './contexts/EventInfoContext';
 import { UserProvider } from './contexts/UserContext';
 
 import useToken from './hooks/useToken';
@@ -14,7 +12,6 @@ function App() {
   return (
     <>
       <ToastContainer />
-      <EventInfoProvider>
         <UserProvider>
           <Router>
             <Routes>
@@ -34,7 +31,6 @@ function App() {
             </Routes>
           </Router>
         </UserProvider>
-      </EventInfoProvider>
     </>
   );
 }
