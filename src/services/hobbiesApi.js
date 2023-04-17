@@ -1,7 +1,7 @@
 import api from './api';
 
-export async function getTasks(token) {
-  const response = await api.get('/task', {
+export async function getHobbies(token) {
+  const response = await api.get('/hobby', {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -11,7 +11,7 @@ export async function getTasks(token) {
 }
 
 export async function save(body, token) {
-  const response = await api.post('/task', body, {
+  const response = await api.post('/hobby', body, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -19,8 +19,9 @@ export async function save(body, token) {
 
   return response.data;
 }
-export async function updateTask(body, params, token) {
-  const response = await api.put(`/task/${params}`, body, {
+
+export async function updateHobby(body, params, token) {
+  const response = await api.put(`/hobby/${params}`, body, {
     headers: {
       Authorization: `Bearer ${token}`,
     },
